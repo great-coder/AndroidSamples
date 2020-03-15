@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Sample Application</string>
+    <string name="module_animation">Module Animation</string>
+    <string name="module_game">Module Gaming</string>
+    <string name="play_again">Play again!</string>
+    <string name="end_game">END OF GAME!</string>
+</resources>
