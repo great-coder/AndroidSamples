@@ -2,7 +2,10 @@
     <string name="app_name">Sample Application</string>
     <string name="module_animation">1- Module Animation</string>
     <string name="module_game">2- Module Gaming</string>
-    <string name="module_video_player">3- Module Video Player</string>
+    <string name="module_video">3- Module Video Player</string>
+    <string name="module_audio">4- Module Audio Control</string>
     <string name="play_again">Play again!</string>
     <string name="end_game">END OF GAME!</string>
+    <string name="play">Play</string>
+    <string name="pause">Pause</string>
 </resources>

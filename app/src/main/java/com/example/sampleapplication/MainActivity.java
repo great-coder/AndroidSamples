@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sampleapplication.modules.AnimationActivity;
+import com.example.sampleapplication.modules.AudioControlActivity;
 import com.example.sampleapplication.modules.GameActivity;
 import com.example.sampleapplication.modules.VideoPlayerActivity;
 
@@ -30,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void ClickVideoPlayer(View view) {
         Intent intent = new Intent(this, VideoPlayerActivity.class);
+        startActivity(intent);
+    }
+
+    public void ClickAudioControl(View view) {
+        Intent intent = new Intent(this, AudioControlActivity.class);
         startActivity(intent);
     }
 }

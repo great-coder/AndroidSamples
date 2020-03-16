@@ -18,8 +18,6 @@
                 android:id="@+id/animation_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 android:onClick="ClickAnimation"
                 android:text="@string/module_animation" />
 
@@ -27,8 +25,6 @@
                 android:id="@+id/game_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 android:onClick="ClickGame"
                 android:text="@string/module_game" />
         </TableRow>
@@ -41,10 +37,15 @@
                 android:id="@+id/video_player_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
                 android:onClick="ClickVideoPlayer"
-                android:text="@string/module_video_player" />
+                android:text="@string/module_video" />
+
+            <Button
+                android:id="@+id/audio_module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="ClickAudioControl"
+                android:text="@string/module_audio" />
         </TableRow>
 
     </TableLayout>

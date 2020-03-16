@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.AudioControlActivity">
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="playAudio"
+        android:text="@string/play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/pauseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="pauseAudio"
+        android:text="@string/pause"
+        app:layout_constraintStart_toEndOf="@+id/playBtn"
+        app:layout_constraintTop_toTopOf="@+id/playBtn" />
+
+    <TextView
+        android:id="@+id/audioControlLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Volume Control:"
+        app:layout_constraintStart_toStartOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" />
+
+    <SeekBar
+        android:id="@+id/audioControlBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@+id/audioControlLbl"
+        app:layout_constraintTop_toTopOf="@+id/audioControlLbl" />
+
+    <TextView
+        android:id="@+id/seekAudioLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Seek:"
+        app:layout_constraintStart_toStartOf="@+id/audioControlLbl"
+        app:layout_constraintTop_toBottomOf="@+id/audioControlLbl" />
+
+    <SeekBar
+        android:id="@+id/seekAudioBar"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toEndOf="@+id/seekAudioLbl"
+        app:layout_constraintTop_toTopOf="@+id/seekAudioLbl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
