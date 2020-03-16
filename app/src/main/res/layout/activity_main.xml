@@ -18,14 +18,16 @@
                 android:id="@+id/animation_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="ClickAnimation"
+                android:onClick="LoadModule"
+                android:tag="MODULE_1"
                 android:text="@string/module_animation" />
 
             <Button
                 android:id="@+id/game_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="ClickGame"
+                android:onClick="LoadModule"
+                android:tag="MODULE_2"
                 android:text="@string/module_game" />
         </TableRow>
 
@@ -37,15 +39,31 @@
                 android:id="@+id/video_player_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="ClickVideoPlayer"
+                android:onClick="LoadModule"
+                android:tag="MODULE_3"
                 android:text="@string/module_video" />
 
             <Button
                 android:id="@+id/audio_module"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="ClickAudioControl"
+                android:onClick="LoadModule"
+                android:tag="MODULE_4"
                 android:text="@string/module_audio" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/list_view_module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LoadModule"
+                android:tag="MODULE_5"
+                android:text="@string/module_list_view" />
+
         </TableRow>
 
     </TableLayout>

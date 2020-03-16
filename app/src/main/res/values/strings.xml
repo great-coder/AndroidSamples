@@ -4,6 +4,7 @@
     <string name="module_game">2- Module Gaming</string>
     <string name="module_video">3- Module Video Player</string>
     <string name="module_audio">4- Module Audio Control</string>
+    <string name="module_list_view">5- Module List View</string>
     <string name="play_again">Play again!</string>
     <string name="end_game">END OF GAME!</string>
     <string name="play">Play</string>

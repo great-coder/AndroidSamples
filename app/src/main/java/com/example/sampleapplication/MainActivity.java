@@ -3,12 +3,14 @@ package com.example.sampleapplication;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sampleapplication.modules.AnimationActivity;
 import com.example.sampleapplication.modules.AudioControlActivity;
 import com.example.sampleapplication.modules.GameActivity;
+import com.example.sampleapplication.modules.ListViewActivity;
 import com.example.sampleapplication.modules.VideoPlayerActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,23 +21,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void ClickAnimation(View view) {
-        Intent intent = new Intent(this, AnimationActivity.class);
-        startActivity(intent);
-    }
-
-    public void ClickGame(View view) {
-        Intent intent = new Intent(this, GameActivity.class);
-        startActivity(intent);
-    }
-
-    public void ClickVideoPlayer(View view) {
-        Intent intent = new Intent(this, VideoPlayerActivity.class);
-        startActivity(intent);
-    }
-
-    public void ClickAudioControl(View view) {
-        Intent intent = new Intent(this, AudioControlActivity.class);
+    public void LoadModule(View view) {
+        String TAG = view.getTag().toString();
+        Intent intent = null;
+        switch (TAG) {
+            case "MODULE_1":
+                intent = new Intent(this, AnimationActivity.class);
+                break;
+            case "MODULE_2":
+                intent = new Intent(this, GameActivity.class);
+                break;
+            case "MODULE_3":
+                intent = new Intent(this, VideoPlayerActivity.class);
+                break;
+            case "MODULE_4":
+                intent = new Intent(this, AudioControlActivity.class);
+                break;
+            case "MODULE_5":
+                intent = new Intent(this, ListViewActivity.class);
+                break;
+            default:
+                Toast.makeText(this, "Unsupported command!", Toast.LENGTH_SHORT).show();
+                break;
+        }
         startActivity(intent);
     }
 }
