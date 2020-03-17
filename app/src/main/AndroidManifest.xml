@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".modules.AppTimerActivity"></activity>
+        <activity android:name=".modules.BrainTrainActivity"></activity>
+        <activity android:name=".modules.AppTimerActivity" />
         <activity android:name=".modules.ListViewActivity" />
         <activity android:name=".modules.AudioControlActivity" />
         <activity android:name=".modules.VideoPlayerActivity" />
