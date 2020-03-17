@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.sampleapplication.modules.AnimationActivity;
+import com.example.sampleapplication.modules.AppTimerActivity;
 import com.example.sampleapplication.modules.AudioControlActivity;
 import com.example.sampleapplication.modules.GameActivity;
 import com.example.sampleapplication.modules.ListViewActivity;
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "MODULE_5":
                 intent = new Intent(this, ListViewActivity.class);
+                break;
+            case "MODULE_6":
+                intent = new Intent(this, AppTimerActivity.class);
                 break;
             default:
                 Toast.makeText(this, "Unsupported command!", Toast.LENGTH_SHORT).show();
