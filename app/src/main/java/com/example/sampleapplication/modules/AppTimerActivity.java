@@ -86,7 +86,10 @@ public class AppTimerActivity extends AppCompatActivity {
                 @Override
                 public void onFinish() {
                     resetTimer();
-                    // TODO: you can play a sound here to notify user that timer is done
+                    /* TODO: you can play a sound here to notify user that timer is done
+                    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sound);
+                    mediaPlayer.start();
+                     */
                     Toast.makeText(AppTimerActivity.this, "Timer has finished!", Toast.LENGTH_SHORT).show();
                 }
             }.start();
