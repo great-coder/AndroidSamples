@@ -21,7 +21,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_1"
-                android:text="@string/module_animation" />
+                android:text="@string/module_animation"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/game_module"
@@ -29,7 +30,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_2"
-                android:text="@string/module_game" />
+                android:text="@string/module_game"
+                android:textAlignment="viewStart" />
         </TableRow>
 
         <TableRow
@@ -43,7 +45,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_3"
-                android:text="@string/module_video" />
+                android:text="@string/module_video"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/audio_module"
@@ -51,7 +54,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_4"
-                android:text="@string/module_audio" />
+                android:text="@string/module_audio"
+                android:textAlignment="viewStart" />
         </TableRow>
 
         <TableRow
@@ -65,7 +69,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_5"
-                android:text="@string/module_list_view" />
+                android:text="@string/module_list_view"
+                android:textAlignment="viewStart" />
 
             <Button
                 android:id="@+id/timer_module"
@@ -73,7 +78,8 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_6"
-                android:text="@string/module_timer" />
+                android:text="@string/module_timer"
+                android:textAlignment="viewStart" />
 
         </TableRow>
 
@@ -88,7 +94,17 @@
                 android:layout_height="wrap_content"
                 android:onClick="LoadModule"
                 android:tag="MODULE_7"
-                android:text="@string/module_brain_train" />
+                android:text="@string/module_brain_train"
+                android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/weather_app_module"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LoadModule"
+                android:tag="MODULE_8"
+                android:text="@string/module_weather_app"
+                android:textAlignment="viewStart" />
 
         </TableRow>
 

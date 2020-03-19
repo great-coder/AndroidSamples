@@ -7,6 +7,7 @@
     <string name="module_list_view">5-Module List View</string>
     <string name="module_timer">6-Module Timer App</string>
     <string name="module_brain_train">7-Module Brain Train</string>
+    <string name="module_weather_app">8-Module Weather App</string>
     <string name="play_again">Play again!</string>
     <string name="end_game">END OF GAME!</string>
     <string name="play">Play</string>
