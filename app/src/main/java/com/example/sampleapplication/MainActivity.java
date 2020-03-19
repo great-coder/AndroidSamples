@@ -14,6 +14,7 @@ import com.example.sampleapplication.modules.BrainTrainActivity;
 import com.example.sampleapplication.modules.GameActivity;
 import com.example.sampleapplication.modules.ListViewActivity;
 import com.example.sampleapplication.modules.VideoPlayerActivity;
+import com.example.sampleapplication.modules.WeatherAppActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,8 +49,11 @@ public class MainActivity extends AppCompatActivity {
             case "MODULE_7":
                 intent = new Intent(this, BrainTrainActivity.class);
                 break;
+            case "MODULE_8":
+                intent = new Intent(this, WeatherAppActivity.class);
+                break;
             default:
-                Toast.makeText(this, "Unsupported command!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Unsupported command!", Toast.LENGTH_SHORT).show();
                 break;
         }
         startActivity(intent);
