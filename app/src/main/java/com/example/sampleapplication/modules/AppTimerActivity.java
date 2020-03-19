@@ -90,7 +90,7 @@ public class AppTimerActivity extends AppCompatActivity {
                     MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sound);
                     mediaPlayer.start();
                      */
-                    Toast.makeText(AppTimerActivity.this, "Timer has finished!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Timer has finished!", Toast.LENGTH_SHORT).show();
                 }
             }.start();
         } else {

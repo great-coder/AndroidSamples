@@ -38,7 +38,7 @@ public class ListViewActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(ListViewActivity.this, list.get(position) + " selected!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), list.get(position) + " selected!", Toast.LENGTH_SHORT).show();
             }
         });
     }
