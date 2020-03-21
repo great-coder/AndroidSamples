@@ -13,6 +13,7 @@ import com.example.sampleapplication.modules.AudioControlActivity;
 import com.example.sampleapplication.modules.BrainTrainActivity;
 import com.example.sampleapplication.modules.GameActivity;
 import com.example.sampleapplication.modules.ListViewActivity;
+import com.example.sampleapplication.modules.MapsActivity;
 import com.example.sampleapplication.modules.VideoPlayerActivity;
 import com.example.sampleapplication.modules.WeatherAppActivity;
 
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "MODULE_8":
                 intent = new Intent(this, WeatherAppActivity.class);
+                break;
+            case "MODULE_9":
+                intent = new Intent(this, MapsActivity.class);
                 break;
             default:
                 Toast.makeText(getApplicationContext(), "Unsupported command!", Toast.LENGTH_SHORT).show();
