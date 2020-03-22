@@ -9,6 +9,7 @@
     <string name="module_brain_train">7-Module Brain Train</string>
     <string name="module_weather_app">8-Module Weather App</string>
     <string name="module_maps">9-Module Maps</string>
+    <string name="module_location">10-Module Location</string>
     <string name="play_again">Play again!</string>
     <string name="end_game">END OF GAME!</string>
     <string name="play">Play</string>

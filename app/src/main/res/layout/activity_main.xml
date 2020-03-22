@@ -121,6 +121,15 @@
                 android:tag="MODULE_9"
                 android:text="@string/module_maps"
                 android:textAlignment="viewStart" />
+
+            <Button
+                android:id="@+id/maps_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="LoadModule"
+                android:tag="MODULE_10"
+                android:text="@string/module_location"
+                android:textAlignment="viewStart" />
         </TableRow>
 
     </TableLayout>
